@@ -1,0 +1,14 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Description: An AWS CloudFormation to create dynamodb tables
+
+Parameters:
+  EnvironmentName:
+    Type: String
+    Description: A name for the environment
+    Default: dev
+    AllowedValues:
+      - dev
+      - prod
+
+Resources:
+
